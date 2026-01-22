@@ -8,8 +8,20 @@ from app.models import GenerateRequest
 from app.jobs import process_job, transcript_hash
 from app.db import jobs_collection
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="InsightBoard Dependency Engine")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://insightboard-pr9e.onrender.com"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/generate")
 def generate(req: GenerateRequest, background_tasks: BackgroundTasks):

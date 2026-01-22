@@ -31,6 +31,26 @@ A backend service that converts meeting transcripts into a validated dependency 
 
 --> The system never crashes on invalid graphs
 
+**_API Endpoints_**
+
+1. POST /generate
+   
+   json : 
+
+          {
+              "transcript": "Meeting transcript text"
+          }
+   
+   Response:
+   
+          {
+              "jobId": "uuid",
+              "status": "PENDING"
+          }
+   
+2. GET /jobs/{jobId}
+
+  Returns job status and final task graph when completed.
 **_Local Setup_**
 
 1. git clone <repo-url>

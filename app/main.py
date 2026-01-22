@@ -41,6 +41,9 @@ def generate(req: GenerateRequest, background_tasks: BackgroundTasks):
         "status": "PENDING"
     }
 
+@app.get("/")
+def root():
+    return {"status": "InsightBoard API is running"}
 
 @app.get("/jobs/{job_id}")
 def get_job(job_id: str):

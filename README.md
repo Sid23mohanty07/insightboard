@@ -50,7 +50,8 @@ A backend service that converts meeting transcripts into a validated dependency 
    
 2. GET /jobs/{jobId}
 
-  Returns job status and final task graph when completed.
+   Returns job status and final task graph when completed.
+   
 **_Local Setup_**
 
 1. git clone <repo-url>

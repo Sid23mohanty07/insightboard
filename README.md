@@ -55,7 +55,7 @@ A backend service that converts meeting transcripts into a validated dependency 
    
 **_Local Setup_**
 
-1. git clone <repo-url>
+1. git clone https://github.com/Sid23mohanty07/insightboard.git
 
    cd backend
    

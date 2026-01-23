@@ -2,17 +2,18 @@
 
 A backend service that converts meeting transcripts into a validated dependency graph of actionable tasks, ensuring logical consistency and safe AI processing.
 
---> Live URL :
---> GitHub Repo :
+--> Live URL : https://insightboard-pr9e.onrender.com/docs
+
+--> GitHub Repo : https://github.com/Sid23mohanty07/insightboard/
 
 **_Tech Stack_**
 --> Backend: Python, FastAPI
 
 --> LLM: Google Gemini (gemini-2.5-flash)
 
---> Database: MongoDB Atlas
+--> Database: MongoDB
 
---> Hosting: Vercel
+--> Hosting: Render
 
 **_Idempotency_**
 --> Each transcript is hashed (SHA-256)
